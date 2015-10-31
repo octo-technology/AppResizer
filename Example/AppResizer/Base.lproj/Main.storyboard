@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DEW-vP-xki">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3Pn-BZ-56J">
+            <objects>
+                <viewController id="DEW-vP-xki" customClass="ViewController" customModule="AppResizer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D1x-gk-j2S"/>
+                        <viewControllerLayoutGuide type="bottom" id="KfO-sa-bzi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aXX-pC-NXw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUa-TS-cpK">
+                                <rect key="frame" x="202" y="80" width="197" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFL-29-1nH">
+                                <rect key="frame" x="30" y="124" width="540" height="95.5"/>
+                                <animations/>
+                                <string key="text">Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-5W-EaL">
+                                <rect key="frame" x="225" y="249.5" width="151" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Modal View Controller"/>
+                                <connections>
+                                    <segue destination="MAz-wl-hxs" kind="presentation" modalPresentationStyle="formSheet" id="B1Q-iy-ZGV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O62-fR-mfd">
+                                <rect key="frame" x="518" y="28" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="ResizeMe"/>
+                                <connections>
+                                    <action selector="didTapOnResizeMe:" destination="DEW-vP-xki" eventType="touchUpInside" id="g4A-KT-FEg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pUa-TS-cpK" firstAttribute="centerX" secondItem="aXX-pC-NXw" secondAttribute="centerX" id="Azq-0Z-qUY"/>
+                            <constraint firstItem="VhD-5W-EaL" firstAttribute="top" secondItem="JFL-29-1nH" secondAttribute="bottom" constant="30" id="Kvm-4h-ZaJ"/>
+                            <constraint firstItem="pUa-TS-cpK" firstAttribute="top" secondItem="D1x-gk-j2S" secondAttribute="bottom" constant="60" id="M8v-tu-lXj"/>
+                            <constraint firstItem="JFL-29-1nH" firstAttribute="centerX" secondItem="aXX-pC-NXw" secondAttribute="centerX" id="TwX-l6-SxZ"/>
+                            <constraint firstItem="JFL-29-1nH" firstAttribute="top" secondItem="pUa-TS-cpK" secondAttribute="bottom" constant="8" id="baj-9e-MXp"/>
+                            <constraint firstItem="O62-fR-mfd" firstAttribute="top" secondItem="D1x-gk-j2S" secondAttribute="bottom" constant="8" id="cyQ-72-m8r"/>
+                            <constraint firstItem="JFL-29-1nH" firstAttribute="leading" secondItem="aXX-pC-NXw" secondAttribute="leadingMargin" constant="10" id="inY-TZ-Z0K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JFL-29-1nH" secondAttribute="trailing" constant="10" id="jky-Pp-PdW"/>
+                            <constraint firstItem="VhD-5W-EaL" firstAttribute="centerX" secondItem="aXX-pC-NXw" secondAttribute="centerX" id="keD-YQ-HKP"/>
+                            <constraint firstAttribute="trailing" secondItem="O62-fR-mfd" secondAttribute="trailing" constant="16" id="u2t-pI-K5V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyc-x3-oGZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="244"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="05b-Pi-Jm6">
+            <objects>
+                <viewController id="MAz-wl-hxs" customClass="ModalViewController" customModule="AppResizer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eBk-Cc-uzy"/>
+                        <viewControllerLayoutGuide type="bottom" id="orc-Kf-Dms"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="51V-KQ-Cab">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modal View controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-xl-KKO">
+                                <rect key="frame" x="135" y="58" width="330" height="38.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKF-r4-Ou3">
+                                <rect key="frame" x="30" y="104.5" width="540" height="61"/>
+                                <animations/>
+                                <string key="text">Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O83-f9-5Xx">
+                                <rect key="frame" x="526" y="8" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnDismissButton:" destination="MAz-wl-hxs" eventType="touchUpInside" id="sFP-rM-N34"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MKF-r4-Ou3" firstAttribute="leading" secondItem="51V-KQ-Cab" secondAttribute="leadingMargin" constant="10" id="95M-lS-zyA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O83-f9-5Xx" secondAttribute="trailing" id="BjB-0B-Kx1"/>
+                            <constraint firstItem="O83-f9-5Xx" firstAttribute="top" secondItem="eBk-Cc-uzy" secondAttribute="bottom" constant="8" id="J4v-pR-ji5"/>
+                            <constraint firstItem="MKF-r4-Ou3" firstAttribute="top" secondItem="1g7-xl-KKO" secondAttribute="bottom" constant="8" id="OWH-Wp-6e4"/>
+                            <constraint firstItem="MKF-r4-Ou3" firstAttribute="centerX" secondItem="51V-KQ-Cab" secondAttribute="centerX" id="Q2q-5V-jEj"/>
+                            <constraint firstItem="1g7-xl-KKO" firstAttribute="centerX" secondItem="51V-KQ-Cab" secondAttribute="centerX" id="Vws-Es-s0i"/>
+                            <constraint firstItem="1g7-xl-KKO" firstAttribute="top" secondItem="O83-f9-5Xx" secondAttribute="bottom" constant="20" id="hi1-GR-EDW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MKF-r4-Ou3" secondAttribute="trailing" constant="10" id="z3Z-fC-fwW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPz-GM-fTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="244"/>
+        </scene>
+    </scenes>
+</document>

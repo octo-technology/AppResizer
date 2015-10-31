@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0774D417599FD1F9EB5B9212CD2330D7 /* Pods-AppResizer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D3CC7C23A55B671EA0A23011517C76 /* Pods-AppResizer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		181A3CD359E7E8B54AEDED545EE62956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		25FABA04C85292F4DE74CEAF5C345D89 /* Pods-AppResizer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D30DFF57BDD31023B631F552E20E57D /* Pods-AppResizer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34347AE90F6D792E8B9CCA4E130B1572 /* AppResizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26621EBD9E220CF5A291CEDF202CBEFA /* AppResizer-dummy.m */; };
+		65A4094A99BFBFC9457928AB3BDA085A /* Pods-AppResizer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA80DDDD62A0364ACCA8C75F68843710 /* Pods-AppResizer_Tests-dummy.m */; };
+		66B576585C6095DF5EA22AEB81887A85 /* SliderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC96C2728C92605E25E5A9CE18D1A82 /* SliderWindow.swift */; };
+		7B156A344BFA10A7E8518CA5C8E5BAD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D4C94EFF67880F6AF931087C59FC3B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		DAB71F8724D784CFA4A0ECE73559E55C /* AppResizer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A340B3537176315EFB36B43F1558B956 /* AppResizer.bundle */; };
+		E7AEF5A758F55544069F80351CD990BD /* AppResizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9868420B7F442D3A9024AA5260A01F /* AppResizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F078A2A7C0898C14609645D99BA8CEB1 /* AppResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20526CD89D0F30FB91D236383AE816E7 /* AppResizer.swift */; };
+		F7B7723A627E21D0E4F18AD187074F26 /* Pods-AppResizer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9F0753BE9F280A57AB91CFCE63654E /* Pods-AppResizer_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14D8CA87C260AFD905752A781756D661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80BE41771582EDCA3DC76F52E9B40775;
+			remoteInfo = AppResizer;
+		};
+		1C1B3447BE7F0D1D15882519C29915C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC22B929A11ECF4F9C1EC9ED216CAA20;
+			remoteInfo = "AppResizer-AppResizer";
+		};
+		6BC23B75F46C708766E0D8C276C49CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80BE41771582EDCA3DC76F52E9B40775;
+			remoteInfo = AppResizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1414661A1841B6957B2C9181B67F1C31 /* Pods-AppResizer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppResizer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1CB5E4BB7DACD4D5EC6880E0340F1367 /* Pods-AppResizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		20526CD89D0F30FB91D236383AE816E7 /* AppResizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppResizer.swift; sourceTree = "<group>"; };
+		26621EBD9E220CF5A291CEDF202CBEFA /* AppResizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppResizer-dummy.m"; sourceTree = "<group>"; };
+		2BB23C7F4CE328AECC400DA430DE0F3D /* Pods-AppResizer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppResizer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D30DFF57BDD31023B631F552E20E57D /* Pods-AppResizer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppResizer_Example-umbrella.h"; sourceTree = "<group>"; };
+		2E9868420B7F442D3A9024AA5260A01F /* AppResizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppResizer-umbrella.h"; sourceTree = "<group>"; };
+		3149E0C673A22C1B61CAFF67D98AD9BB /* Pods-AppResizer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppResizer_Example-resources.sh"; sourceTree = "<group>"; };
+		36D3CC7C23A55B671EA0A23011517C76 /* Pods-AppResizer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppResizer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4853C1A24988B434B014CAA8A47ECDC7 /* Pods-AppResizer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		529011EE36A0DB777A69B61B492805E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA56DBBA5D7247CA2F9FC830D085FFA /* Pods_AppResizer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppResizer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9C2C0293A661CEE590B021D342A87C /* Pods-AppResizer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8C5AF3F28F5FF27A10A49839993EA913 /* AppResizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AppResizer.modulemap; sourceTree = "<group>"; };
+		925EF41321F53E3B321A88F6D9037D36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC96C2728C92605E25E5A9CE18D1A82 /* SliderWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SliderWindow.swift; sourceTree = "<group>"; };
+		9F674203A7656C1B026A7788A9D2D662 /* Pods-AppResizer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppResizer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A340B3537176315EFB36B43F1558B956 /* AppResizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppResizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95A5422C361B33F96801C32DE67D950 /* AppResizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppResizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABAE1FAA362DC93357C495DE64BA15E /* Pods-AppResizer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppResizer_Tests-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD27787D7C3D16C5CEE9EFB75DD6D7AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppResizer.xcconfig; sourceTree = "<group>"; };
+		C8183112B5D280D31B4AFA03B32A74A4 /* AppResizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppResizer-prefix.pch"; sourceTree = "<group>"; };
+		D1B54AD7EE3C3126AE47EA1B8674FC1A /* Pods-AppResizer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppResizer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D98748136DDEBE5900965EFFD5A655E3 /* Pods-AppResizer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppResizer_Tests.modulemap"; sourceTree = "<group>"; };
+		DB9F0753BE9F280A57AB91CFCE63654E /* Pods-AppResizer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppResizer_Example-dummy.m"; sourceTree = "<group>"; };
+		DE1D6BF70B36370B8C257E8BA385DCE9 /* Pods-AppResizer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppResizer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E6F1E4E066B1F2E98C674A21A6FD9011 /* Pods-AppResizer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppResizer_Example.modulemap"; sourceTree = "<group>"; };
+		F213CA4B2D2978FCD6DE9BCFD9700806 /* Pods-AppResizer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppResizer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FA49F11B9CE314C0A9AB0A31CBED0BFF /* Pods-AppResizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FA80DDDD62A0364ACCA8C75F68843710 /* Pods-AppResizer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppResizer_Tests-dummy.m"; sourceTree = "<group>"; };
+		FAC74342489220C44A65571E6BBA9DF1 /* Pods_AppResizer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppResizer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		417502DA3CD029CAD745B22FDC7E3D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181A3CD359E7E8B54AEDED545EE62956 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BAA48E25062653FE5DE36808F40DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C94EFF67880F6AF931087C59FC3B36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D74CF2A2A79286EDC0D28016A79118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CA37A3BDE55F599071061DD5D27FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B156A344BFA10A7E8518CA5C8E5BAD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3320B0A92B001C175170C6CDFFDD57B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				20526CD89D0F30FB91D236383AE816E7 /* AppResizer.swift */,
+				9BC96C2728C92605E25E5A9CE18D1A82 /* SliderWindow.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5063E89F34C3B93279222D0F124C4B07 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				599317298B0CC63DE49D4DE4026E1BC8 /* AppResizer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		542CA922E0FB3052E77B520A7055F4E4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3320B0A92B001C175170C6CDFFDD57B7 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		599317298B0CC63DE49D4DE4026E1BC8 /* AppResizer */ = {
+			isa = PBXGroup;
+			children = (
+				542CA922E0FB3052E77B520A7055F4E4 /* Pod */,
+				B15D4E29FF42F56839CA08BCFF4C35B4 /* Support Files */,
+			);
+			name = AppResizer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				5063E89F34C3B93279222D0F124C4B07 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F6A117530EA653BFBC7B6BC2538BA93C /* Products */,
+				F6B7B5EF7102F2D68B1B9DD1C3A6403D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A5D30BEE61604A96A085D87C952E508E /* Pods-AppResizer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				BD27787D7C3D16C5CEE9EFB75DD6D7AC /* Info.plist */,
+				E6F1E4E066B1F2E98C674A21A6FD9011 /* Pods-AppResizer_Example.modulemap */,
+				9F674203A7656C1B026A7788A9D2D662 /* Pods-AppResizer_Example-acknowledgements.markdown */,
+				2BB23C7F4CE328AECC400DA430DE0F3D /* Pods-AppResizer_Example-acknowledgements.plist */,
+				DB9F0753BE9F280A57AB91CFCE63654E /* Pods-AppResizer_Example-dummy.m */,
+				F213CA4B2D2978FCD6DE9BCFD9700806 /* Pods-AppResizer_Example-frameworks.sh */,
+				3149E0C673A22C1B61CAFF67D98AD9BB /* Pods-AppResizer_Example-resources.sh */,
+				2D30DFF57BDD31023B631F552E20E57D /* Pods-AppResizer_Example-umbrella.h */,
+				4853C1A24988B434B014CAA8A47ECDC7 /* Pods-AppResizer_Example.debug.xcconfig */,
+				6A9C2C0293A661CEE590B021D342A87C /* Pods-AppResizer_Example.release.xcconfig */,
+			);
+			name = "Pods-AppResizer_Example";
+			path = "Target Support Files/Pods-AppResizer_Example";
+			sourceTree = "<group>";
+		};
+		B15D4E29FF42F56839CA08BCFF4C35B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C5AF3F28F5FF27A10A49839993EA913 /* AppResizer.modulemap */,
+				C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */,
+				26621EBD9E220CF5A291CEDF202CBEFA /* AppResizer-dummy.m */,
+				C8183112B5D280D31B4AFA03B32A74A4 /* AppResizer-prefix.pch */,
+				2E9868420B7F442D3A9024AA5260A01F /* AppResizer-umbrella.h */,
+				529011EE36A0DB777A69B61B492805E8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AppResizer";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6A117530EA653BFBC7B6BC2538BA93C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A340B3537176315EFB36B43F1558B956 /* AppResizer.bundle */,
+				A95A5422C361B33F96801C32DE67D950 /* AppResizer.framework */,
+				FAC74342489220C44A65571E6BBA9DF1 /* Pods_AppResizer_Example.framework */,
+				5BA56DBBA5D7247CA2F9FC830D085FFA /* Pods_AppResizer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6B7B5EF7102F2D68B1B9DD1C3A6403D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D30BEE61604A96A085D87C952E508E /* Pods-AppResizer_Example */,
+				F80834D2E7B2CD5F67E93A4FC53C0524 /* Pods-AppResizer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F80834D2E7B2CD5F67E93A4FC53C0524 /* Pods-AppResizer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				925EF41321F53E3B321A88F6D9037D36 /* Info.plist */,
+				D98748136DDEBE5900965EFFD5A655E3 /* Pods-AppResizer_Tests.modulemap */,
+				1414661A1841B6957B2C9181B67F1C31 /* Pods-AppResizer_Tests-acknowledgements.markdown */,
+				D1B54AD7EE3C3126AE47EA1B8674FC1A /* Pods-AppResizer_Tests-acknowledgements.plist */,
+				FA80DDDD62A0364ACCA8C75F68843710 /* Pods-AppResizer_Tests-dummy.m */,
+				DE1D6BF70B36370B8C257E8BA385DCE9 /* Pods-AppResizer_Tests-frameworks.sh */,
+				AABAE1FAA362DC93357C495DE64BA15E /* Pods-AppResizer_Tests-resources.sh */,
+				36D3CC7C23A55B671EA0A23011517C76 /* Pods-AppResizer_Tests-umbrella.h */,
+				1CB5E4BB7DACD4D5EC6880E0340F1367 /* Pods-AppResizer_Tests.debug.xcconfig */,
+				FA49F11B9CE314C0A9AB0A31CBED0BFF /* Pods-AppResizer_Tests.release.xcconfig */,
+			);
+			name = "Pods-AppResizer_Tests";
+			path = "Target Support Files/Pods-AppResizer_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9A4A0661A36D79FF527DA68F72714B27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7AEF5A758F55544069F80351CD990BD /* AppResizer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD83E458762BA7B00A87CA477C74FB9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FABA04C85292F4DE74CEAF5C345D89 /* Pods-AppResizer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24A19EFBFE0230AF5E34D0F69536FBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0774D417599FD1F9EB5B9212CD2330D7 /* Pods-AppResizer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7EEE3EDBE9F3F27C03D806AEDD450630 /* Pods-AppResizer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469523BB3E71095E2266C639AF599087 /* Build configuration list for PBXNativeTarget "Pods-AppResizer_Example" */;
+			buildPhases = (
+				75E3B4BF5D426C7D905052BE995E2A17 /* Sources */,
+				417502DA3CD029CAD745B22FDC7E3D10 /* Frameworks */,
+				AD83E458762BA7B00A87CA477C74FB9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91601CEF9EEAEBAD045F1E3824A6381D /* PBXTargetDependency */,
+			);
+			name = "Pods-AppResizer_Example";
+			productName = "Pods-AppResizer_Example";
+			productReference = FAC74342489220C44A65571E6BBA9DF1 /* Pods_AppResizer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80BE41771582EDCA3DC76F52E9B40775 /* AppResizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36568C2DD2B91E1CF30B9DA4168A0CF9 /* Build configuration list for PBXNativeTarget "AppResizer" */;
+			buildPhases = (
+				837E1526AEB81C91DBF4D4C0EB26E9DC /* Sources */,
+				F7CA37A3BDE55F599071061DD5D27FC9 /* Frameworks */,
+				BA2114F8368471BED69491C5DA14DC31 /* Resources */,
+				9A4A0661A36D79FF527DA68F72714B27 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A7D5C45ACF3B82CD5B0FC7E206ABE6 /* PBXTargetDependency */,
+			);
+			name = AppResizer;
+			productName = AppResizer;
+			productReference = A95A5422C361B33F96801C32DE67D950 /* AppResizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC22B929A11ECF4F9C1EC9ED216CAA20 /* AppResizer-AppResizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5BFDC21F66B484A2740901223668739 /* Build configuration list for PBXNativeTarget "AppResizer-AppResizer" */;
+			buildPhases = (
+				08F91584D38F241073205DC50F02AC1F /* Sources */,
+				B8D74CF2A2A79286EDC0D28016A79118 /* Frameworks */,
+				B2998D00879D11E961F9552A45672B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppResizer-AppResizer";
+			productName = "AppResizer-AppResizer";
+			productReference = A340B3537176315EFB36B43F1558B956 /* AppResizer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C6D03F28D31F0D600176CE6CF4DA0C06 /* Pods-AppResizer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC2C6714F1EDB8AAD057E92A598720D /* Build configuration list for PBXNativeTarget "Pods-AppResizer_Tests" */;
+			buildPhases = (
+				907FC2ABCA890C8246D6431E63B65DEF /* Sources */,
+				44BAA48E25062653FE5DE36808F40DF3 /* Frameworks */,
+				B24A19EFBFE0230AF5E34D0F69536FBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F05163E793A9875312ACA62B280C170 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppResizer_Tests";
+			productName = "Pods-AppResizer_Tests";
+			productReference = 5BA56DBBA5D7247CA2F9FC830D085FFA /* Pods_AppResizer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F6A117530EA653BFBC7B6BC2538BA93C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80BE41771582EDCA3DC76F52E9B40775 /* AppResizer */,
+				AC22B929A11ECF4F9C1EC9ED216CAA20 /* AppResizer-AppResizer */,
+				7EEE3EDBE9F3F27C03D806AEDD450630 /* Pods-AppResizer_Example */,
+				C6D03F28D31F0D600176CE6CF4DA0C06 /* Pods-AppResizer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2998D00879D11E961F9552A45672B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2114F8368471BED69491C5DA14DC31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB71F8724D784CFA4A0ECE73559E55C /* AppResizer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F91584D38F241073205DC50F02AC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E3B4BF5D426C7D905052BE995E2A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B7723A627E21D0E4F18AD187074F26 /* Pods-AppResizer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E1526AEB81C91DBF4D4C0EB26E9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34347AE90F6D792E8B9CCA4E130B1572 /* AppResizer-dummy.m in Sources */,
+				F078A2A7C0898C14609645D99BA8CEB1 /* AppResizer.swift in Sources */,
+				66B576585C6095DF5EA22AEB81887A85 /* SliderWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907FC2ABCA890C8246D6431E63B65DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A4094A99BFBFC9457928AB3BDA085A /* Pods-AppResizer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F05163E793A9875312ACA62B280C170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppResizer;
+			target = 80BE41771582EDCA3DC76F52E9B40775 /* AppResizer */;
+			targetProxy = 6BC23B75F46C708766E0D8C276C49CAB /* PBXContainerItemProxy */;
+		};
+		13A7D5C45ACF3B82CD5B0FC7E206ABE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppResizer-AppResizer";
+			target = AC22B929A11ECF4F9C1EC9ED216CAA20 /* AppResizer-AppResizer */;
+			targetProxy = 1C1B3447BE7F0D1D15882519C29915C3 /* PBXContainerItemProxy */;
+		};
+		91601CEF9EEAEBAD045F1E3824A6381D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppResizer;
+			target = 80BE41771582EDCA3DC76F52E9B40775 /* AppResizer */;
+			targetProxy = 14D8CA87C260AFD905752A781756D661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		567387DFE36B5517B68F2D35AA78A989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AppResizer/AppResizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppResizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AppResizer/AppResizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AppResizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57F4C6F829EFD7CA255300C846EA5539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AppResizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6E78A27EE768E35D4B95B71DCC42F9F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA49F11B9CE314C0A9AB0A31CBED0BFF /* Pods-AppResizer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppResizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppResizer_Tests/Pods-AppResizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AppResizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B611A47E5312080A9812A6084E6D1F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4853C1A24988B434B014CAA8A47ECDC7 /* Pods-AppResizer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppResizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppResizer_Example/Pods-AppResizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AppResizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D21C76ECC6873056323D788B430B2A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AppResizer/AppResizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppResizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AppResizer/AppResizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AppResizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F418A39714BDCFADBA463A1BAEFC5619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB5E4BB7DACD4D5EC6880E0340F1367 /* Pods-AppResizer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppResizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppResizer_Tests/Pods-AppResizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AppResizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4DA02EA3CB431F95EEF3EFA38EB2F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9C2C0293A661CEE590B021D342A87C /* Pods-AppResizer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppResizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppResizer_Example/Pods-AppResizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AppResizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFCF83771B8C000393C8E89AD54C536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DA985CC37C48A7921D4EEF5CAE5FD9 /* AppResizer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AppResizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36568C2DD2B91E1CF30B9DA4168A0CF9 /* Build configuration list for PBXNativeTarget "AppResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567387DFE36B5517B68F2D35AA78A989 /* Debug */,
+				D21C76ECC6873056323D788B430B2A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469523BB3E71095E2266C639AF599087 /* Build configuration list for PBXNativeTarget "Pods-AppResizer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B611A47E5312080A9812A6084E6D1F65 /* Debug */,
+				F4DA02EA3CB431F95EEF3EFA38EB2F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC2C6714F1EDB8AAD057E92A598720D /* Build configuration list for PBXNativeTarget "Pods-AppResizer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418A39714BDCFADBA463A1BAEFC5619 /* Debug */,
+				6E78A27EE768E35D4B95B71DCC42F9F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5BFDC21F66B484A2740901223668739 /* Build configuration list for PBXNativeTarget "AppResizer-AppResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F4C6F829EFD7CA255300C846EA5539 /* Debug */,
+				FFCF83771B8C000393C8E89AD54C536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module AppResizer {
+  umbrella header "AppResizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

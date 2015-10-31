@@ -1,0 +1,14 @@
+PODS:
+  - AppResizer (0.1.0)
+
+DEPENDENCIES:
+  - AppResizer (from `../`)
+
+EXTERNAL SOURCES:
+  AppResizer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppResizer: a790fb246479f07fa731c8deb931fa079a12d4e5
+
+COCOAPODS: 0.39.0
