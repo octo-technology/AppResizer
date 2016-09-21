@@ -13,15 +13,16 @@ import AppResizer
 
 class ViewController: UIViewController {
 
-    @IBAction func didTapOnResizeMe(sender: UIButton) {
-        guard let mainWindow = UIApplication.sharedApplication().delegate?.window ?? nil else {
+    @IBAction func didTapOnResizeMe(_ sender: UIButton) {
+        guard let window = UIApplication.shared.delegate?.window ?? nil else {
             return
         }
-        AppResizer.sharedInstance.enable(mainWindow)
-        UIView.animateWithDuration(0.3, animations:{ () -> Void in
-            sender.alpha = 0
+        AppResizer.sharedInstance.enable(mainWindow: window)
+        UIView.animate(
+            withDuration: 0.3,
+            animations:{
+                sender.alpha = 0
         })
         
     }
 }
-

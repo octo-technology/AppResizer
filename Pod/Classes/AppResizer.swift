@@ -24,9 +24,12 @@ public class AppResizer: NSObject {
 
     // MARK: - Update
 
-    func updateWindow(horizontaSliderValue: Float, verticalSliderValue: Float) {
+    func updateWindow(horizontalSliderValue: Float, verticalSliderValue: Float) {
         if let baseFrame = self.sliderWindow?.frame, let window = self.mainWindow {
-            window.frame = CGRectMake(0, 0, CGFloat(horizontaSliderValue) * baseFrame.width, CGFloat(verticalSliderValue) * baseFrame.height)
+            window.frame = CGRect(x: 0,
+                                  y: 0,
+                                  width: CGFloat(horizontalSliderValue) * baseFrame.width,
+                                  height: CGFloat(verticalSliderValue) * baseFrame.height)
         }
     }
 
@@ -36,24 +39,21 @@ public class AppResizer: NSObject {
     func addSliderWindow() {
 
         self.sliderWindow = {
-            let newWindow = SliderWindow(frame: UIScreen.mainScreen().bounds)
+            let newWindow = SliderWindow(frame: UIScreen.main.bounds)
             newWindow.rootViewController = UIViewController()
-            newWindow.rootViewController?.view.backgroundColor = UIColor.clearColor()
+            newWindow.rootViewController?.view.backgroundColor = .clear
             newWindow.makeKeyAndVisible()
             return newWindow
         }()
 
         self.sliderWindow?.enableSliders()
 
-        self.sliderWindow?.sliderValueDidChange = { horizontalSliderValue, verticalSliderValue in
-            self.updateWindow(horizontalSliderValue, verticalSliderValue: verticalSliderValue)
+        self.sliderWindow?.sliderValueDidChange = {
+            self.updateWindow(horizontalSliderValue: $0, verticalSliderValue: $1)
         }
 
-        self.sliderWindow?.windowDidRotate = { horizontalSliderValue, verticalSliderValue in
-            self.updateWindow(horizontalSliderValue, verticalSliderValue: verticalSliderValue)
+        self.sliderWindow?.windowDidRotate = {
+            self.updateWindow(horizontalSliderValue: $0, verticalSliderValue: $1)
         }
     }
-
-
-    
 }

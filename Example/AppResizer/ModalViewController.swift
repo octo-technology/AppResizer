@@ -10,7 +10,7 @@ import UIKit
 
 class ModalViewController: UIViewController {
 
-    @IBAction func didTapOnDismissButton(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func didTapOnDismissButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
