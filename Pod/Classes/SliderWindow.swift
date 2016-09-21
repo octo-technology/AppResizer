@@ -1,4 +1,4 @@
-import Darwin
+import UIKit
 
 class SliderWindow: UIWindow {
 
