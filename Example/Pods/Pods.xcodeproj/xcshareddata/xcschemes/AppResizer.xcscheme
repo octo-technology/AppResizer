@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '65D020E57F82721A9E42CE9A'
-               BlueprintName = 'AppResizer'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AppResizer.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "80BE41771582EDCA3DC76F52E9B40775"
+               BlueprintName = "AppResizer"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "AppResizer.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DEW-vP-xki">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DEW-vP-xki">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,49 +16,40 @@
                         <viewControllerLayoutGuide type="bottom" id="KfO-sa-bzi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aXX-pC-NXw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUa-TS-cpK">
-                                <rect key="frame" x="202" y="80" width="197" height="36"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFL-29-1nH">
-                                <rect key="frame" x="30" y="124" width="540" height="95.5"/>
-                                <animations/>
                                 <string key="text">Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-5W-EaL">
-                                <rect key="frame" x="225" y="249.5" width="151" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Modal View Controller"/>
                                 <connections>
                                     <segue destination="MAz-wl-hxs" kind="presentation" modalPresentationStyle="formSheet" id="B1Q-iy-ZGV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O62-fR-mfd">
-                                <rect key="frame" x="518" y="28" width="66" height="30"/>
-                                <animations/>
                                 <state key="normal" title="ResizeMe"/>
                                 <connections>
                                     <action selector="didTapOnResizeMe:" destination="DEW-vP-xki" eventType="touchUpInside" id="g4A-KT-FEg"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pUa-TS-cpK" firstAttribute="centerX" secondItem="aXX-pC-NXw" secondAttribute="centerX" id="Azq-0Z-qUY"/>
                             <constraint firstItem="VhD-5W-EaL" firstAttribute="top" secondItem="JFL-29-1nH" secondAttribute="bottom" constant="30" id="Kvm-4h-ZaJ"/>
@@ -85,40 +77,33 @@
                         <viewControllerLayoutGuide type="bottom" id="orc-Kf-Dms"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="51V-KQ-Cab">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modal View controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-xl-KKO">
-                                <rect key="frame" x="135" y="58" width="330" height="38.5"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKF-r4-Ou3">
-                                <rect key="frame" x="30" y="104.5" width="540" height="61"/>
-                                <animations/>
                                 <string key="text">Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O83-f9-5Xx">
-                                <rect key="frame" x="526" y="8" width="54" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Dismiss">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapOnDismissButton:" destination="MAz-wl-hxs" eventType="touchUpInside" id="sFP-rM-N34"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MKF-r4-Ou3" firstAttribute="leading" secondItem="51V-KQ-Cab" secondAttribute="leadingMargin" constant="10" id="95M-lS-zyA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O83-f9-5Xx" secondAttribute="trailing" id="BjB-0B-Kx1"/>
@@ -127,6 +112,7 @@
                             <constraint firstItem="MKF-r4-Ou3" firstAttribute="centerX" secondItem="51V-KQ-Cab" secondAttribute="centerX" id="Q2q-5V-jEj"/>
                             <constraint firstItem="1g7-xl-KKO" firstAttribute="centerX" secondItem="51V-KQ-Cab" secondAttribute="centerX" id="Vws-Es-s0i"/>
                             <constraint firstItem="1g7-xl-KKO" firstAttribute="top" secondItem="O83-f9-5Xx" secondAttribute="bottom" constant="20" id="hi1-GR-EDW"/>
+                            <constraint firstItem="orc-Kf-Dms" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MKF-r4-Ou3" secondAttribute="bottom" constant="20" id="n0R-ot-flP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MKF-r4-Ou3" secondAttribute="trailing" constant="10" id="z3Z-fC-fwW"/>
                         </constraints>
                     </view>

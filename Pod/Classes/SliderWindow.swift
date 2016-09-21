@@ -5,8 +5,8 @@ class SliderWindow: UIWindow {
     // MARK: - Contants
 
     private struct Constants {
-        static let sliderBackgroundColor = UIColor(red:0.56, green:0.35, blue:0.71, alpha:1.0)
-        static let sliderMinimumTrackTintColor = UIColor(red:0.37, green:0.20, blue:0.37, alpha:1.0)
+        static let sliderBackgroundColor = UIColor(red: 0.56, green: 0.35, blue: 0.71, alpha: 1.0)
+        static let sliderMinimumTrackTintColor = UIColor(red: 0.37, green: 0.20, blue: 0.37, alpha: 1.0)
         static let sliderHeight = CGFloat(40)
         static let sliderWidth = CGFloat(40)
         static let defaultMargin = CGFloat(8)
@@ -16,12 +16,12 @@ class SliderWindow: UIWindow {
 
     // MARK: - Propeties
 
-    var horizontalSlider: UISlider!
-    var verticalSlider: UISlider!
-    var widthLabel: UILabel?
+    var horizontalSlider: UISlider?
+    var verticalSlider: UISlider?
+    var descriptionLabel: UILabel?
 
-    var windowDidRotate:((horizontalSliderValue: Float, verticalSliderValue: Float) -> ())?
-    var sliderValueDidChange:((horizontalSliderValue: Float, verticalSliderValue: Float) -> ())?
+    var windowDidRotate:((horizontalSliderValue: Float, verticalSliderValue: Float) -> Void)?
+    var sliderValueDidChange:((horizontalSliderValue: Float, verticalSliderValue: Float) -> Void)?
 
 
     // MARK: - Enable
@@ -29,7 +29,7 @@ class SliderWindow: UIWindow {
     func enableSliders() {
         self.setupSliders()
         self.listenToRotationNotification()
-        self.setupWidthLabel()
+        self.setupDescriptionLabel()
     }
 
 
@@ -38,19 +38,19 @@ class SliderWindow: UIWindow {
     func setupSliders() {
 
         self.horizontalSlider = createSlider()
-        self.addSubview(self.horizontalSlider)
+        self.horizontalSlider.map(self.addSubview)
         self.addConstraintsForHorizontalSlider()
 
         self.verticalSlider = createSlider()
-        self.addSubview(self.verticalSlider)
+        self.verticalSlider.map(self.addSubview)
 
-        self.verticalSlider.translatesAutoresizingMaskIntoConstraints = true
-        self.verticalSlider.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 0.5))
-        self.verticalSlider.frame = CGRect(x: 0,
+        self.verticalSlider?.translatesAutoresizingMaskIntoConstraints = true
+        self.verticalSlider?.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 0.5))
+        self.verticalSlider?.frame = CGRect(x: 0,
                                            y: 0,
                                            width: Constants.sliderWidth,
                                            height: self.frame.height - 2*Constants.defaultMargin - Constants.sliderHeight)
-        self.verticalSlider.center = CGPoint(x: self.frame.width - Constants.defaultMargin - Constants.sliderWidth/2,
+        self.verticalSlider?.center = CGPoint(x: self.frame.width - Constants.defaultMargin - Constants.sliderWidth/2,
                                              y: (self.frame.height - Constants.sliderHeight - Constants.defaultMargin)/2)
     }
 
@@ -73,21 +73,24 @@ class SliderWindow: UIWindow {
     }
 
     private func addConstraintsForHorizontalSlider() {
-        self.horizontalSlider.addConstraint(NSLayoutConstraint(item: self.horizontalSlider, attribute: .Height, relatedBy: .Equal,
+        guard let horizontalSlider = self.horizontalSlider else {
+            return
+        }
+        horizontalSlider.addConstraint(NSLayoutConstraint(item: horizontalSlider, attribute: .Height, relatedBy: .Equal,
             toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: Constants.sliderHeight))
-        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: self.horizontalSlider,
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: horizontalSlider,
             attribute: .Bottom, multiplier: 1, constant: Constants.defaultMargin))
-        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: self.horizontalSlider,
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: horizontalSlider,
             attribute: .Leading, multiplier: 1, constant: -Constants.defaultMargin))
-        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: self.horizontalSlider,
-            attribute: .Trailing, multiplier: 1, constant: Constants.defaultMargin))
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: horizontalSlider,
+            attribute: .Trailing, multiplier: 1, constant: 2 * Constants.defaultMargin + Constants.sliderHeight))
     }
 
     func listenToRotationNotification() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "deviceOrientationDidChange:", name: UIDeviceOrientationDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SliderWindow.deviceOrientationDidChange(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
 
-    func setupWidthLabel() {
+    func setupDescriptionLabel() {
 
         guard let
             horizontalSlider = self.horizontalSlider,
@@ -95,7 +98,7 @@ class SliderWindow: UIWindow {
                 return
         }
 
-        self.widthLabel = {
+        self.descriptionLabel = {
 
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -103,7 +106,7 @@ class SliderWindow: UIWindow {
 
             self.addSubview(label)
 
-            label.addConstraint(NSLayoutConstraint(item: label, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0, constant: 100))
+            label.addConstraint(NSLayoutConstraint(item: label, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0, constant: 120))
             label.addConstraint(NSLayoutConstraint(item: label, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0, constant: 30))
             self.addConstraint(NSLayoutConstraint(item: label, attribute: .Bottom, relatedBy: .Equal, toItem: horizontalSlider, attribute: .Top, multiplier: 1, constant: -4))
             self.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterX, relatedBy: .Equal, toItem: horizontalSlider, attribute: .CenterX, multiplier: 1, constant: 0))
@@ -124,8 +127,12 @@ class SliderWindow: UIWindow {
     // MARK: - Orientation did change
 
     @objc func deviceOrientationDidChange(notification: NSNotification) {
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.windowDidRotate?(horizontalSliderValue: self.horizontalSlider.value, verticalSliderValue: self.verticalSlider.value)
+        guard let horizontalValue = self.horizontalSlider?.value,
+            let verticalValue = self.verticalSlider?.value else {
+                return
+        }
+        dispatch_async(dispatch_get_main_queue()) {
+            self.windowDidRotate?(horizontalSliderValue: horizontalValue, verticalSliderValue: verticalValue)
             self.updateLabel()
         }
     }
@@ -138,20 +145,35 @@ class SliderWindow: UIWindow {
     }
     
     private func notifySliderValuesChanged() {
-        self.sliderValueDidChange?(horizontalSliderValue: self.horizontalSlider.value, verticalSliderValue: self.verticalSlider.value)
+        guard let horizontalValue = self.horizontalSlider?.value,
+            let verticalValue = self.verticalSlider?.value else {
+                return
+        }
+        self.sliderValueDidChange?(horizontalSliderValue: horizontalValue,
+                                   verticalSliderValue: verticalValue)
     }
     
     
     // MARK: - Update Label
     
     func updateLabel() {
-        self.widthLabel?.text = String(Int(self.horizontalSlider.value * Float(self.frame.width)))
+        guard let horizontalValue = self.horizontalSlider?.value,
+            let verticalValue = self.verticalSlider?.value else {
+                return
+        }
+        let width = String(Int(horizontalValue * Float(self.frame.width)))
+        let height = String(Int(verticalValue * Float(self.frame.height)))
+        self.descriptionLabel?.text = width + "x" + height
     }
     
     
     // MARK: - Point Event Handler
     
     override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
-        return CGRectContainsPoint(self.verticalSlider.frame, point) || CGRectContainsPoint(self.horizontalSlider.frame, point)
+        guard let horizontalFrame = self.horizontalSlider?.frame,
+            let verticalFrame = self.verticalSlider?.frame else {
+                return true
+        }
+        return CGRectContainsPoint(verticalFrame, point) || CGRectContainsPoint(horizontalFrame, point)
     }
 }
