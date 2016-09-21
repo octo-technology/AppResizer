@@ -1,4 +1,7 @@
-
+public enum Mode {
+    case freeform
+    case predefinedSize
+}
 
 public class AppResizer: NSObject {
 
@@ -10,35 +13,59 @@ public class AppResizer: NSObject {
     // MARK: - Properties
 
     private var mainWindow: UIWindow?
-    private var sliderWindow: SliderWindow?
+    private var resizingWindow: ResizingWindow?
+    private var mode = Mode.freeform
 
 
     // MARK: - Enable
 
-    public func enable(mainWindow: UIWindow) {
+    public func enable(mainWindow: UIWindow, mode: Mode = Mode.freeform) {
         self.mainWindow = mainWindow
+        self.mode = mode
 
-        self.addSliderWindow()
+        self.mode == Mode.predefinedSize ? addPredefinedWindow() : addSliderWindow()
+
+        registerWindowToValueChange()
+        activateWindow()
     }
 
 
     // MARK: - Update
 
-    func updateWindow(horizontalSliderValue: Float, verticalSliderValue: Float) {
-        if let baseFrame = self.sliderWindow?.frame, let window = self.mainWindow {
+    func updateWindow(resizedSize: CGSize) {
+        guard
+            let baseFrame = resizingWindow?.frame,
+            let window = mainWindow else {
+                return
+        }
+        UIView.animate(withDuration: 0.3) {
             window.frame = CGRect(x: 0,
                                   y: 0,
-                                  width: CGFloat(horizontalSliderValue) * baseFrame.width,
-                                  height: CGFloat(verticalSliderValue) * baseFrame.height)
+                                  width: resizedSize.width,
+                                  height: resizedSize.height)
         }
     }
 
 
     // MARK: - Private
 
-    func addSliderWindow() {
+    private func registerWindowToValueChange() {
+        resizingWindow?.resizingValueDidChange = {
+            self.updateWindow(resizedSize: $0)
+        }
 
-        self.sliderWindow = {
+        resizingWindow?.windowDidRotate = {
+            self.updateWindow(resizedSize: $0)
+        }
+    }
+
+    private func activateWindow() {
+        resizingWindow?.enable()
+    }
+
+    private func addSliderWindow() {
+
+        resizingWindow = {
             let newWindow = SliderWindow(frame: UIScreen.main.bounds)
             newWindow.rootViewController = UIViewController()
             newWindow.rootViewController?.view.backgroundColor = .clear
@@ -46,14 +73,16 @@ public class AppResizer: NSObject {
             return newWindow
         }()
 
-        self.sliderWindow?.enableSliders()
+    }
 
-        self.sliderWindow?.sliderValueDidChange = {
-            self.updateWindow(horizontalSliderValue: $0, verticalSliderValue: $1)
-        }
+    private func addPredefinedWindow() {
 
-        self.sliderWindow?.windowDidRotate = {
-            self.updateWindow(horizontalSliderValue: $0, verticalSliderValue: $1)
-        }
+        resizingWindow = {
+            let newWindow = DevicesListWindow(frame: UIScreen.main.bounds)
+            newWindow.rootViewController = UIViewController()
+            newWindow.rootViewController?.view.backgroundColor = .clear
+            newWindow.makeKeyAndVisible()
+            return newWindow
+        }()
     }
 }

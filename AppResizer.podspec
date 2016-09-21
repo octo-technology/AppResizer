@@ -17,8 +17,11 @@ This tool will also help you to test if you are ready to activate the multitaski
   s.author           = { "Ahmed Mseddi" => "amseddi@octo.com" }
   s.source           = { :git => "https://github.com/octo-technology/AppResizer.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
+  s.resource_bundles = {
+   'AppResizer' => ['Pod/**/*.plist']
+  }
 end

@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         guard let window = UIApplication.shared.delegate?.window ?? nil else {
             return
         }
-        AppResizer.sharedInstance.enable(mainWindow: window)
+        AppResizer.sharedInstance.enable(mainWindow: window, mode: .predefinedSize)
         UIView.animate(
             withDuration: 0.3,
             animations:{

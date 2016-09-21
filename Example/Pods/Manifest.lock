@@ -1,5 +1,5 @@
 PODS:
-  - AppResizer (0.1.0)
+  - AppResizer (0.1.1)
 
 DEPENDENCIES:
   - AppResizer (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppResizer: a790fb246479f07fa731c8deb931fa079a12d4e5
+  AppResizer: 0ca6738f0c71d009f28d79b12625a80718a86406
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: efb4cad728280bbce685c7e31daf3369f670e0c5
+
+COCOAPODS: 1.1.0.rc.2

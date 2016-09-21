@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'AppResizer_Example', :exclusive => true do
-  pod "AppResizer", :path => "../"
-end
+target 'AppResizer_Example' do
+  pod 'AppResizer', :path => "../"
 
-target 'AppResizer_Tests', :exclusive => true do
-  pod "AppResizer", :path => "../"
-
-  
+  target 'AppResizer_Tests' do
+   inherit! :search_paths
+  end
 end
