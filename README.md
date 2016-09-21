@@ -37,6 +37,15 @@ pod "AppResizer"
 AppResizer.sharedInstance.enable(mainWindow)
 ```
 
+## Changelog
+
+-----
+### 0.1.1
+* Added vertical slider
+
+---
+### 0.1.0
+
 
 ## Author
 
