@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		06B2DC0D4350F3416B263B094AE04624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1151E2C4A71AFBFAE4CA1DBF /* DevicesListWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151E4801F3D0219779D3E92 /* DevicesListWindow.swift */; };
+		1151E49FC5D74098D9C289F0 /* SliderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151E2E1F8DC2478C3A897D1 /* SliderWindow.swift */; };
+		1151E991FFA1C4B8D98AEC83 /* DeviceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151E0F1CE426C11C0237A6D /* DeviceButton.swift */; };
+		1151EB1FF776BF212100C5B1 /* ResizingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151EDBE51D386987DBD1CE1 /* ResizingWindow.swift */; };
 		40D1F97D751B545BCDD1A76F67131DD8 /* AppResizer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10AACA9807335A6CBD1B630260917009 /* AppResizer.bundle */; };
 		50DBE4A1F930214BDC39D422F8C02E4C /* Pods-AppResizer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA80DDDD62A0364ACCA8C75F68843710 /* Pods-AppResizer_Tests-dummy.m */; };
 		57DB018FCA12D31F11B2F65B7E9FB3E1 /* Pods-AppResizer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9F0753BE9F280A57AB91CFCE63654E /* Pods-AppResizer_Example-dummy.m */; };
@@ -15,7 +19,6 @@
 		5A68BCC46FD8976A8330C94ADFFEA769 /* AppResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3EF3B911EB98FEEAF74240D0BF7C5F /* AppResizer.swift */; };
 		684A4EED88B1D344F9F3B8C4FD1532D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		80BB15CBE7C038E5C46C5C766B0DD287 /* AppResizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD99595666E210DF966BB80B024EC021 /* AppResizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8723813A2E3339EDDB0E905D1D7B971C /* SliderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC179AA64F201FAF7BF7A7303DBE7C /* SliderWindow.swift */; };
 		9A1732A9507E3B084A4952F0FE1EB53D /* iOSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF30963F3B815B6173F5F727BF1022 /* iOSDevice.swift */; };
 		AF7F9FF6CA6463A9EA8906FCA5653CD6 /* AppResizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB293CB0C1BA0DC560D2E1D25213CEE6 /* AppResizer-dummy.m */; };
 		C31B267E0E5DA719D8A5DFAB9FEE919F /* Pods-AppResizer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D3CC7C23A55B671EA0A23011517C76 /* Pods-AppResizer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +47,10 @@
 /* Begin PBXFileReference section */
 		0C3EF3B911EB98FEEAF74240D0BF7C5F /* AppResizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppResizer.swift; sourceTree = "<group>"; };
 		10AACA9807335A6CBD1B630260917009 /* AppResizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppResizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1151E0F1CE426C11C0237A6D /* DeviceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceButton.swift; sourceTree = "<group>"; };
+		1151E2E1F8DC2478C3A897D1 /* SliderWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWindow.swift; sourceTree = "<group>"; };
+		1151E4801F3D0219779D3E92 /* DevicesListWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesListWindow.swift; sourceTree = "<group>"; };
+		1151EDBE51D386987DBD1CE1 /* ResizingWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizingWindow.swift; sourceTree = "<group>"; };
 		1414661A1841B6957B2C9181B67F1C31 /* Pods-AppResizer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppResizer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1CB5E4BB7DACD4D5EC6880E0340F1367 /* Pods-AppResizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		24ECAEC7FE68F53D22B457D7F5067382 /* AppResizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppResizer-prefix.pch"; sourceTree = "<group>"; };
@@ -76,7 +83,6 @@
 		E6183A921B19C66D99AC7616F1722AE9 /* AppResizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppResizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F1E4E066B1F2E98C674A21A6FD9011 /* Pods-AppResizer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppResizer_Example.modulemap"; sourceTree = "<group>"; };
 		F0AF30963F3B815B6173F5F727BF1022 /* iOSDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iOSDevice.swift; sourceTree = "<group>"; };
-		F1DC179AA64F201FAF7BF7A7303DBE7C /* SliderWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SliderWindow.swift; sourceTree = "<group>"; };
 		F213CA4B2D2978FCD6DE9BCFD9700806 /* Pods-AppResizer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppResizer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FA49F11B9CE314C0A9AB0A31CBED0BFF /* Pods-AppResizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppResizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FA80DDDD62A0364ACCA8C75F68843710 /* Pods-AppResizer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppResizer_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -117,6 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1151E4DF5B4A6AA78B80079E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1151E0F1CE426C11C0237A6D /* DeviceButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		1151EA9BE70619412ADA4C67 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				1151E2E1F8DC2478C3A897D1 /* SliderWindow.swift */,
+				1151E4801F3D0219779D3E92 /* DevicesListWindow.swift */,
+				1151EDBE51D386987DBD1CE1 /* ResizingWindow.swift */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
 		202BD1422B63029B5CFCFDC490B2A820 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +247,8 @@
 				0C3EF3B911EB98FEEAF74240D0BF7C5F /* AppResizer.swift */,
 				F0AF30963F3B815B6173F5F727BF1022 /* iOSDevice.swift */,
 				456B02BD93A5FAC7AE672D3B4FB885D8 /* PlistFileLoader.swift */,
-				F1DC179AA64F201FAF7BF7A7303DBE7C /* SliderWindow.swift */,
+				1151EA9BE70619412ADA4C67 /* Window */,
+				1151E4DF5B4A6AA78B80079E /* Button */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -451,7 +476,10 @@
 				5A68BCC46FD8976A8330C94ADFFEA769 /* AppResizer.swift in Sources */,
 				9A1732A9507E3B084A4952F0FE1EB53D /* iOSDevice.swift in Sources */,
 				E0CAFB4624005CD3436D6FDD8B792D49 /* PlistFileLoader.swift in Sources */,
-				8723813A2E3339EDDB0E905D1D7B971C /* SliderWindow.swift in Sources */,
+				1151E49FC5D74098D9C289F0 /* SliderWindow.swift in Sources */,
+				1151E2C4A71AFBFAE4CA1DBF /* DevicesListWindow.swift in Sources */,
+				1151EB1FF776BF212100C5B1 /* ResizingWindow.swift in Sources */,
+				1151E991FFA1C4B8D98AEC83 /* DeviceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

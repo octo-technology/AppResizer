@@ -23,7 +23,7 @@ public class AppResizer: NSObject {
         self.mainWindow = mainWindow
         self.mode = mode
 
-        self.mode == Mode.predefinedSize ? addPredefinedWindow() : addSliderWindow()
+        self.mode == .predefinedSize ? addPredefinedWindow() : addSliderWindow()
 
         registerWindowToValueChange()
         activateWindow()
@@ -35,10 +35,11 @@ public class AppResizer: NSObject {
     func updateWindow(resizedSize: CGSize) {
         guard
             let baseFrame = resizingWindow?.frame,
-            let window = mainWindow else {
+            let window = mainWindow,
+            let animated = resizingWindow?.shouldAnimate() else {
                 return
         }
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: animated ? 0.3 : 0.0) {
             window.frame = CGRect(x: 0,
                                   y: 0,
                                   width: resizedSize.width,
@@ -51,7 +52,7 @@ public class AppResizer: NSObject {
 
     private func registerWindowToValueChange() {
         resizingWindow?.resizingValueDidChange = {
-            self.updateWindow(resizedSize: $0)
+          self.updateWindow(resizedSize: $0)
         }
 
         resizingWindow?.windowDidRotate = {
